@@ -12,7 +12,7 @@ the `geospy` suite inside of a Docker containers.
 The repository currently hosts instructions for:
 
 - :white_check_mark: geopsy v3.4.2 with qt v5.14
-- :construction: geopsy v2.10.1 with qt v4.8 (forthcoming)
+- :white_check_mark: geopsy v2.10.1 with qt v4.8
 
 __The pre-build images can be found on
 [dockerhub](https://hub.docker.com/repository/docker/jpvantassel/geopsy-docker)__.
