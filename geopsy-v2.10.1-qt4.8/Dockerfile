@@ -1,6 +1,6 @@
 FROM ubuntu:xenial
 
-LABEL IMAGE_NAME="jpvantassel/geospy-docker:2.10.1-qt4.8"
+LABEL IMAGE_NAME="jpvantassel/geopsy-docker:2.10.1-qt4.8"
 LABEL MAINTAINER="Joseph P. Vantassel <joseph.p.vantassel@gmail.com>"
 
 RUN apt update \
@@ -14,11 +14,9 @@ RUN apt update \
    liblapack-dev \
    zlib1g-dev \
    libopenblas-dev \
-   python3 \
-   python3-pip \
  && apt clean
 
-RUN mkdir -p /home/user
+RUN mkdir -p /home/user/
 
 COPY geopsypack-src-2.10.1.tar.gz /home/user/
 

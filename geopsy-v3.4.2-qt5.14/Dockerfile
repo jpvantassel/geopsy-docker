@@ -1,6 +1,6 @@
 FROM rabits/qt:5.14-desktop
 
-LABEL IMAGE_NAME="jpvantassel/geospy-docker:3.4.2-qt5.14"
+LABEL IMAGE_NAME="jpvantassel/geopsy-docker:3.4.2-qt5.14"
 LABEL MAINTAINER="Joseph P. Vantassel <joseph.p.vantassel@gmail.com>"
 
 COPY geopsypack-src-3.4.2.tar.gz /home/user/
@@ -29,10 +29,3 @@ RUN /bin/bash -c \
  && rm -rf geopsypack-src-3.4.2
 
 ENV PATH=/home/user/geopsy/bin/:$PATH
-
-RUN sudo apt update \
- && sudo apt upgrade --yes \
- && sudo apt install --yes --quiet --no-install-recommends \
-    python3 \
-    python3-pip \
- && sudo apt clean

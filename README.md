@@ -4,12 +4,12 @@
 
 ## About `geopsy-docker`
 
-The [geopsy](https://www.geopsy.org/) suite is a powerful set of open-source tools for geophysics research,
+The [geopsy suite](https://www.geopsy.org/) is a powerful set of open-source tools for geophysics research,
 however the installation of those tools can be challenging, especially on systems where
 a user does not have root privileges. Therefore, this repository includes instructions for building
-the `geospy` suite inside of a Docker containers.
+the `geospy suite` inside of a Docker container.
 
-The repository currently hosts instructions for:
+The repository currently hosts instructions (i.e., Dockerfiles) for:
 
 - :white_check_mark: geopsy v3.4.2 with qt v5.14
 - :white_check_mark: geopsy v2.10.1 with qt v4.8
