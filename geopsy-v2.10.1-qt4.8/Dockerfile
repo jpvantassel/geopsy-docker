@@ -3,6 +3,10 @@ FROM ubuntu:xenial
 LABEL IMAGE_NAME="jpvantassel/geopsy-docker:2.10.1-qt4.8"
 LABEL MAINTAINER="Joseph P. Vantassel <joseph.p.vantassel@gmail.com>"
 
+RUN mkdir -p /home/user/
+
+COPY geopsypack-src-2.10.1.tar.gz /home/user/
+
 RUN apt update \
  && apt upgrade --yes \
  && apt install --yes --quiet --no-install-recommends \
@@ -15,10 +19,6 @@ RUN apt update \
    zlib1g-dev \
    libopenblas-dev \
  && apt clean
-
-RUN mkdir -p /home/user/
-
-COPY geopsypack-src-2.10.1.tar.gz /home/user/
 
 RUN cd /home/user/ \
  && tar -xf geopsypack-src-2.10.1.tar.gz \
